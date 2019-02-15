@@ -4,7 +4,7 @@ int main()
     int a,i,b[1000];
     scanf("%d",&a);
     int j=0,k,l;
-    for(i=2;i<=a/2;i++)
+    for(i=2;i<=a;i++)
     {
         if(a%i==0)
         {
