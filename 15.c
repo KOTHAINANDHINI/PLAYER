@@ -1,0 +1,89 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[1000],b[1000],c[1000],d[1000],e[1000];
+    int i,j,l,m,n,o,p,k=0,q=0,r=0,s=0,x=1;
+    scanf("%s",a);
+    scanf("%s",b);
+    scanf("%s",c);
+    scanf("%s",d);
+    scanf("%s",e);
+    l=strlen(a);
+    m=strlen(b);
+    n=strlen(c);
+    o=strlen(d);
+    p=strlen(e);
+    printf("%d %d %d %d %d",l,m,n,o,p);
+    if(l==m)
+    {
+        for(i=0;i<l;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            if(a[i]==b[j])
+           {
+               b[j]='$';
+               k++;
+           }
+        }
+    }
+    }
+     printf("\n%d\n",k);
+      if(l==k)
+      x++;
+    if(l==n)
+    {
+        for(i=0;i<l;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(a[i]==c[j]){
+                c[j]='$';
+                q++;
+            }
+           
+        }
+    }
+    }
+    if(l==q)
+    x++;
+    printf("%d\n",q);
+    if(l==o)
+    {
+        for(i=0;i<l;i++)
+    {
+        for(j=0;j<o;j++)
+        {
+            if(a[i]==d[j])
+            {
+                d[j]='$';
+                r++;
+            }
+        }
+    }
+    }
+    if(l==r)
+    x++;
+     printf("%d\n",r);
+    if(l==p)
+    {
+        for(i=0;i<l;i++)
+    {
+        for(j=0;j<p;j++)
+        {
+            if(a[i]==e[j])
+            {
+                e[j]='$';
+                s++;
+            }
+        }
+    }
+    }
+     printf("%d\n",s);
+    if(l==s)
+    x++;
+    
+    printf("x=%d",x);
+    return 0;
+}
