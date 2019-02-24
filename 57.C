@@ -2,9 +2,9 @@
 #include<string.h>
 int main()
 {
-    char a[1000],b[10];
+    char a[1000],b;
     scanf("%s",&a);
-    scanf("%s",&b);
+    scanf("%c",&b);
      int i,l=0;
     for(i=0;a[i]!='\0';i++)
     {
