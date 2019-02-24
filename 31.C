@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    char a[100];
+    int i,k=0,l=0,m=0,n=0;
+    scanf("%s",a);
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]=='('||a[i]==')')
+        {
+          m++;  
+        }
+        n++;
+    }
+    if(m==n)
+    {
+        for(i=0;i<n;i++)
+        {
+            if(a[i]=='(')
+            {
+                k++;
+            }
+            if(a[i]==')')
+            {
+                l++;
+            }
+        }
+         if(k==l)
+         {
+           printf("yes");
+         }
+    }
+    else
+    {
+        printf("no");
+    }
+    getch();
+}
