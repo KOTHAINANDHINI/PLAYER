@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[1000],i,k,N,j=0,l=0;
+    scanf("%d",&N);
+    scanf("%d",&k);
+    for(i=0;i<N;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<N;i++)
+    {
+        if(a[i]!=k)
+        {
+            j++;
+        }
+        if(a[i]==k)
+        {
+            l=1;
+        }
+    }
+    if(j==N)
+    {
+        printf("no");
+    }
+    if(l==1)
+    {
+        printf("yes");
+    }
+    getch();
+}
