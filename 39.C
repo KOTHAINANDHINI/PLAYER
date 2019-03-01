@@ -12,7 +12,7 @@ int main()
             break;
         }
     }
-    if(l==1)
+    if(l==1||a==1)
     {
         printf("yes");
     }
