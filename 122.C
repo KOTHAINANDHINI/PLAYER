@@ -15,14 +15,36 @@ int main()
 		flag=0;
 		
 	}
-	if(flag==0)
-	{
-		printf("no");
-	}
 	if(flag==1)
 	{
-		printf("yes");
+	 if(str[3]=='0'&&str[4]=='1')
+	    printf("January");
+	if(str[3]=='0'&&str[4]=='2')
+	 printf("February");
+	 if(str[3]=='0'&&str[4]=='3')
+	 printf("March");
+	 if(str[3]=='0'&&str[4]=='4')
+	 printf("April");
+	 if(str[3]=='0'&&str[4]=='5')
+	 printf("May");
+	 if(str[3]=='0'&&str[4]=='6')
+	 printf("June");
+	 if(str[3]=='0'&&str[4]=='7')
+	 printf("July");
+	 if(str[3]=='0'&&str[4]=='8')
+	 printf("August");
+	 if(str[3]=='0'&&str[4]=='9')
+	 printf("September");
+	 if(str[3]=='1'&&str[4]=='0')
+	 printf("October");
+	 if(str[3]=='1'&&str[4]=='1')
+	 printf("November");
+	 if(str[3]=='1'&&str[4]=='2')
+	 printf("December");   
 	}
-	
+	else
+	{
+	    printf("invalid");
+	}
 	return 0;
 }
