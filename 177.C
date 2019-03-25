@@ -2,9 +2,8 @@
 
 int main()
 {
-char a[100],b[100];
-int i,k,j;
-printf("\nenter the string:\n");
+char a[100],b[100],temp;
+int i,k,j,m;
 scanf("%[^\n]s",a);
 k=0;
 for(i=0;a[i]!='\0';i++)
@@ -17,9 +16,21 @@ for(i=0;a[i]!='\0';i++)
  else
  {
  b[k]='\0';
- for(j=k-1;j>=0;j--)
+ for(j=0;j<k;j++)
  {
- printf("%c",b[j]);
+   for(m=j+1;m<k;m++)
+   {
+    if(b[j]>b[m])
+    {
+     temp=b[j];
+     b[j]=b[m];
+     b[m]=temp;
+    }
+   }
+ }
+ for(j=0;j<k;j++)
+ {
+  printf("%c",b[j]);
  }
  k=0;
  printf(" ");
